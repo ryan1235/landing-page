@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&display=swap');
+
+:root{
+    --font-principal: font-family: 'Bebas Neue', cursive;
+    --font-secundaria: font-family: 'Luxurious Roman', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background-image: url(img/beackgrud.jpg);
+    background-size: 100%;
+    animation: zoom 15s;
+}
+
+@keyframes zoom{
+    0%{
+        background-size: 80%;  
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.377);
+    border-bottom: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+header img{
+    height: 3rem;
+}
+nav{
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    animation: trasison 2s;
+}
+
+nav a{
+    font-family: var(--font-secundaria);
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: solid 2px purple;
+    color: rgb(202, 8, 250);
+    padding: .5rem;
+    border-radius: 15px;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: rgba(92, 19, 109, 0.432);
+    padding: .5rem;
+    color: #fff;
+
+}
+main{
+    margin-bottom: 2rem;
+}
+
+.conteudo-primario{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid purple;
+}
+
+.conteudo-texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 2rem 3rem;
+    border: 3px solid purple;
+    border-radius: 10%;
+    animation: trasison 2s;
+}
+
+@keyframes trasison{
+    0%{
+        left: 100rem;
+    }
+    100%{
+        left: 0rem;
+        top: 0rem;
+    }
+}
+
+.conteudo-texto h1{
+    font-family: var(--font-principal);
+}
+.conteudo-texto h2{
+
+    font-family: var(--font-secundaria);
+
+}
+.conteudo-texto button{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 5px 4px rgba(10, 10, 10, 0.295);
+    font-size: 2rem;
+    font-family: var(--font-secundaria);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height: 60px;
+    background: #8e2de2; 
+    cursor: pointer;
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); 
+    background: linear-gradient(to right, #8e2de2, #4a00e0); 
+    transition: all 1s;
+}
+
+.conteudo-texto button:hover{
+    opacity: .7;
+}
+main img{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 2rem 3rem;
+    border: 3px solid purple;
+    border-radius: 30%;
+    animation: trasison 2s;
+    margin-bottom: 2rem;
+}
+
+.conteudo-secundario{
+    background-color: rgba(0, 0, 0, 0.377); 
+    border-bottom: 2px solid purple;
+}
+.texto-secundario{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    color: #fff;
+}
+.texto-secundario{
+    animation: trasison 2s;
+    font-family: var(--font-secundaria);
+}
+.texto-secundario h3{
+    box-shadow: 4px 5px 4px rgba(102, 2, 122, 0.322);
+    font-size: 2rem;
+}
+.texto-secundario p{
+    box-shadow: 4px 5px 4px rgba(102, 2, 122, 0.322);
+    font-size: 1.5rem;
+}
+
+footer img{
+    display: block;
+    margin: 0 auto;
+}
